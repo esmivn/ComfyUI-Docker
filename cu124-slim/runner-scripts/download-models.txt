@@ -59,3 +59,24 @@ https://huggingface.co/esmivn/downloads/resolve/main/icl.safetensors
 https://huggingface.co/esmivn/downloads/resolve/main/fylv8m.pt
   dir=ultralytics/bbox
   out=face_yolov8m.pt
+
+# HiDream
+
+https://huggingface.co/Comfy-Org/HiDream-I1_ComfyUI/resolve/main/split_files/vae/ae.safetensors
+  dir=vae
+  out=ae.safetensors
+https://huggingface.co/Comfy-Org/HiDream-I1_ComfyUI/resolve/main/split_files/text_encoders/clip_l_hidream.safetensors
+  dir=text_encoders
+  out=clip_l_hidream.safetensors
+https://huggingface.co/Comfy-Org/HiDream-I1_ComfyUI/resolve/main/split_files/text_encoders/clip_g_hidream.safetensors
+  dir=text_encoders
+  out=clip_g_hidream.safetensors
+https://huggingface.co/Comfy-Org/HiDream-I1_ComfyUI/resolve/main/split_files/text_encoders/t5xxl_fp8_e4m3fn_scaled.safetensors
+  dir=text_encoders
+  out=t5xxl_fp8_e4m3fn_scaled.safetensors
+https://huggingface.co/Comfy-Org/HiDream-I1_ComfyUI/resolve/main/split_files/text_encoders/llama_3.1_8b_instruct_fp8_scaled.safetensors
+  dir=text_encoders
+  out=llama_3.1_8b_instruct_fp8_scaled.safetensors
+https://huggingface.co/Comfy-Org/HiDream-I1_ComfyUI/resolve/main/split_files/diffusion_models/hidream_i1_dev_fp8.safetensors
+  dir=diffusion_models
+  out=hidream_i1_dev_fp8.safetensors
