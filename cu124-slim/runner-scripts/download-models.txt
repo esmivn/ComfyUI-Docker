@@ -13,19 +13,17 @@ https://raw.githubusercontent.com/madebyollin/taesd/main/taef1_decoder.pth
   dir=vae_approx
   out=taef1_decoder.pth
 
-# flux-lora
-
-https://huggingface.co/lllyasviel/flux1_dev/resolve/main/flux1-dev-fp8.safetensors
-  dir=checkpoints
-  out=flux1-dev-fp8.safetensors
-
-# INPAINT
-https://huggingface.co/esmivn/downloads/resolve/main/jxlvxi.safetensors
-  dir=checkpoints
-  out=juggernautXL_versionXInpaint.safetensors
+# # flux-lora
+# https://huggingface.co/lllyasviel/flux1_dev/resolve/main/flux1-dev-fp8.safetensors
+#   dir=checkpoints
+#   out=flux1-dev-fp8.safetensors
+# 
+# # INPAINT
+# https://huggingface.co/esmivn/downloads/resolve/main/jxlvxi.safetensors
+#   dir=checkpoints
+#   out=juggernautXL_versionXInpaint.safetensors
 
 # wan21_start_end_720p
-
 https://huggingface.co/city96/Wan2.1-I2V-14B-720P-gguf/resolve/main/wan2.1-i2v-14b-720p-Q5_K_S.gguf
   dir=unet
   out=wan2.1-i2v-14b-720p-Q5_K_S.gguf
@@ -39,29 +37,41 @@ https://huggingface.co/Comfy-Org/Wan_2.1_ComfyUI_repackaged/resolve/main/split_f
   dir=vae
   out=wan_2.1_vae.safetensors
 
-# 250226_MICKMUMPITZ_CCC_v02_FLUX_ADV
+# wan21-i2v-720p-Q5
+https://huggingface.co/city96/Wan2.1-I2V-14B-720P-gguf/resolve/main/wan2.1-i2v-14b-720p-Q5_K_S.gguf
+  dir=unet
+  out=wan2.1-i2v-14b-720p-Q5_K_S.gguf
+https://huggingface.co/Comfy-Org/Wan_2.1_ComfyUI_repackaged/resolve/main/split_files/text_encoders/umt5_xxl_fp8_e4m3fn_scaled.safetensors
+  dir=text_encoders
+  out=umt5_xxl_fp8_e4m3fn_scaled.safetensors
+https://huggingface.co/Comfy-Org/Wan_2.1_ComfyUI_repackaged/resolve/main/split_files/clip_vision/clip_vision_h.safetensors
+  dir=clip_vision
+  out=clip_vision_h.safetensors
+https://huggingface.co/Comfy-Org/Wan_2.1_ComfyUI_repackaged/resolve/main/split_files/vae/wan_2.1_vae.safetensors
+  dir=vae
+  out=wan_2.1_vae.safetensors
 
-https://huggingface.co/lllyasviel/flux1_dev/resolve/main/flux1-dev-fp8.safetensors
-  dir=checkpoints
-  out=flux1-dev-fp8.safetensors
-https://huggingface.co/InstantX/FLUX.1-dev-Controlnet-Union/resolve/main/diffusion_pytorch_model.safetensors
-  dir=controlnet/FLUX.1/InstantX-FLUX1-Dev-Union
-  out=diffusion_pytorch_model.safetensors
-https://huggingface.co/esmivn/downloads/resolve/main/4xcrv1.pth
-  dir=upscale_models
-  out=4x-ClearRealityV1.pth
-https://huggingface.co/esmivn/downloads/resolve/main/phv1.safetensors
-  dir=checkpoints
-  out=photon_v1.safetensors
-https://huggingface.co/esmivn/downloads/resolve/main/icl.safetensors
-  dir=diffusion_models/IC-Light
-  out=iclight_sd15_fbc.safetensors
-https://huggingface.co/esmivn/downloads/resolve/main/fylv8m.pt
-  dir=ultralytics/bbox
-  out=face_yolov8m.pt
+# # 250226_MICKMUMPITZ_CCC_v02_FLUX_ADV
+# https://huggingface.co/lllyasviel/flux1_dev/resolve/main/flux1-dev-fp8.safetensors
+#   dir=checkpoints
+#   out=flux1-dev-fp8.safetensors
+# https://huggingface.co/InstantX/FLUX.1-dev-Controlnet-Union/resolve/main/diffusion_pytorch_model.safetensors
+#   dir=controlnet/FLUX.1/InstantX-FLUX1-Dev-Union
+#   out=diffusion_pytorch_model.safetensors
+# https://huggingface.co/esmivn/downloads/resolve/main/4xcrv1.pth
+#   dir=upscale_models
+#   out=4x-ClearRealityV1.pth
+# https://huggingface.co/esmivn/downloads/resolve/main/phv1.safetensors
+#   dir=checkpoints
+#   out=photon_v1.safetensors
+# https://huggingface.co/esmivn/downloads/resolve/main/icl.safetensors
+#   dir=diffusion_models/IC-Light
+#   out=iclight_sd15_fbc.safetensors
+# https://huggingface.co/esmivn/downloads/resolve/main/fylv8m.pt
+#   dir=ultralytics/bbox
+#   out=face_yolov8m.pt
 
 # HiDream
-
 https://huggingface.co/Comfy-Org/HiDream-I1_ComfyUI/resolve/main/split_files/vae/ae.safetensors
   dir=vae
   out=ae.safetensors
@@ -77,6 +87,32 @@ https://huggingface.co/Comfy-Org/HiDream-I1_ComfyUI/resolve/main/split_files/tex
 https://huggingface.co/Comfy-Org/HiDream-I1_ComfyUI/resolve/main/split_files/text_encoders/llama_3.1_8b_instruct_fp8_scaled.safetensors
   dir=text_encoders
   out=llama_3.1_8b_instruct_fp8_scaled.safetensors
+https://huggingface.co/Comfy-Org/HiDream-I1_ComfyUI/resolve/main/split_files/diffusion_models/hidream_i1_full_fp16.safetensors
+  dir=diffusion_models
+  out=hidream_i1_full_fp16.safetensors
 https://huggingface.co/Comfy-Org/HiDream-I1_ComfyUI/resolve/main/split_files/diffusion_models/hidream_i1_dev_fp8.safetensors
   dir=diffusion_models
   out=hidream_i1_dev_fp8.safetensors
+
+# Index-TTS
+https://huggingface.co/esmivn/Index-TTS/resolve/main/bigvgan_discriminator.pth
+  dir=TTS/Index-TTS
+  out=bigvgan_discriminator.pth
+https://huggingface.co/esmivn/Index-TTS/resolve/main/bigvgan_generator_v1_5.pth
+  dir=TTS/Index-TTS
+  out=bigvgan_generator_v1_5.pth
+https://huggingface.co/esmivn/Index-TTS/resolve/main/bpe_v1_5.model
+  dir=TTS/Index-TTS
+  out=bpe_v1_5.model
+https://huggingface.co/esmivn/Index-TTS/resolve/main/config.yaml
+  dir=TTS/Index-TTS
+  out=config.yaml
+https://huggingface.co/esmivn/Index-TTS/resolve/main/dvae.pth
+  dir=TTS/Index-TTS
+  out=dvae.pth
+https://huggingface.co/esmivn/Index-TTS/resolve/main/gpt_v1_5.pth
+  dir=TTS/Index-TTS
+  out=gpt_v1_5.pth
+https://huggingface.co/esmivn/Index-TTS/resolve/main/unigram_12000.vocab
+  dir=TTS/Index-TTS
+  out=unigram_12000.vocab
