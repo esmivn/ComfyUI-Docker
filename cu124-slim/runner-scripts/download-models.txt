@@ -102,6 +102,12 @@ https://huggingface.co/city96/HiDream-I1-Full-gguf/resolve/main/hidream-i1-full-
 https://huggingface.co/city96/HiDream-I1-Full-gguf/resolve/main/hidream-i1-full-Q8_0.gguf
   dir=unet
   out=hidream-i1-full-Q8_0.gguf
+https://huggingface.co/city96/HiDream-I1-Dev-gguf/resolve/main/hidream-i1-dev-BF16.gguf
+  dir=unet
+  out=hidream-i1-dev-BF16.gguf
+https://huggingface.co/city96/HiDream-I1-Dev-gguf/resolve/main/hidream-i1-dev-Q8_0.gguf
+  dir=unet
+  out=hidream-i1-dev-Q8_0.gguf
 
 # Index-TTS
 # 1.538 + 0.499 + 0 + 0 + 0.227 + 1.091 + 0 = 3.35 GB
