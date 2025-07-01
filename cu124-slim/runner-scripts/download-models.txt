@@ -96,12 +96,6 @@ https://huggingface.co/Comfy-Org/HiDream-I1_ComfyUI/resolve/main/split_files/tex
 https://huggingface.co/Comfy-Org/HiDream-I1_ComfyUI/resolve/main/split_files/text_encoders/llama_3.1_8b_instruct_fp8_scaled.safetensors
   dir=text_encoders
   out=llama_3.1_8b_instruct_fp8_scaled.safetensors
-https://huggingface.co/city96/HiDream-I1-Full-gguf/resolve/main/hidream-i1-full-F16.gguf
-  dir=unet
-  out=hidream-i1-full-F16.gguf
-https://huggingface.co/city96/HiDream-I1-Full-gguf/resolve/main/hidream-i1-full-Q8_0.gguf
-  dir=unet
-  out=hidream-i1-full-Q8_0.gguf
 https://huggingface.co/city96/HiDream-I1-Dev-gguf/resolve/main/hidream-i1-dev-BF16.gguf
   dir=unet
   out=hidream-i1-dev-BF16.gguf
