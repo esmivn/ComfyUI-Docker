@@ -111,7 +111,7 @@ https://huggingface.co/esmivn/downloads/resolve/main/video-upscaler/umt5-xxl-enc
   out=umt5-xxl-encoder-Q6_K.gguf
 
 # hidream edit
-# 0.3+1+0.2+9+5+34.2=49.7
+# 0.3+1+0.2+9+5+17.4=32.9
 https://huggingface.co/esmivn/downloads/resolve/main/hidream-edit/ae.safetensors
   dir=vae
   out=ae.safetensors
@@ -121,9 +121,9 @@ https://huggingface.co/esmivn/downloads/resolve/main/hidream-edit/clip_g_hidream
 https://huggingface.co/esmivn/downloads/resolve/main/hidream-edit/clip_l_hidream.safetensors
   dir=text_encoders
   out=clip_l_hidream.safetensors
-https://huggingface.co/esmivn/downloads/resolve/main/hidream-edit/hidream_e1_1_bf16.safetensors
-  dir=diffusion_models
-  out=hidream_e1_1_bf16.safetensors
+https://huggingface.co/esmivn/downloads/resolve/main/hidream-edit/hidream_e1_1_bf16_Q8_0.gguf
+  dir=unet
+  out=hidream_e1_1_bf16_Q8_0.gguf
 https://huggingface.co/esmivn/downloads/resolve/main/hidream-edit/llama_3.1_8b_instruct_fp8_scaled.safetensors
   dir=text_encoders
   out=llama_3.1_8b_instruct_fp8_scaled.safetensors
