@@ -43,21 +43,93 @@ https://huggingface.co/Comfy-Org/Wan_2.1_ComfyUI_repackaged/resolve/main/split_f
 
 # wan21-i2v-720p
 # 11.259 + 16.899 + 6.273 + 1.177 + 0.236 = 35.84 GB
-https://huggingface.co/city96/Wan2.1-I2V-14B-720P-gguf/resolve/main/wan2.1-i2v-14b-720p-Q5_K_S.gguf
+# https://huggingface.co/city96/Wan2.1-I2V-14B-720P-gguf/resolve/main/wan2.1-i2v-14b-720p-Q5_K_S.gguf
+#   dir=unet
+#   out=wan2.1-i2v-14b-720p-Q5_K_S.gguf
+# https://huggingface.co/city96/Wan2.1-I2V-14B-720P-gguf/resolve/main/wan2.1-i2v-14b-720p-Q8_0.gguf
+#   dir=unet
+#   out=wan2.1-i2v-14b-720p-Q8_0.gguf
+# https://huggingface.co/Comfy-Org/Wan_2.1_ComfyUI_repackaged/resolve/main/split_files/text_encoders/umt5_xxl_fp8_e4m3fn_scaled.safetensors
+#   dir=text_encoders
+#   out=umt5_xxl_fp8_e4m3fn_scaled.safetensors
+# https://huggingface.co/Comfy-Org/Wan_2.1_ComfyUI_repackaged/resolve/main/split_files/clip_vision/clip_vision_h.safetensors
+#   dir=clip_vision
+#   out=clip_vision_h.safetensors
+# https://huggingface.co/Comfy-Org/Wan_2.1_ComfyUI_repackaged/resolve/main/split_files/vae/wan_2.1_vae.safetensors
+#   dir=vae
+#   out=wan_2.1_vae.safetensors
+
+# wan22-i2v-720p
+# 6.7+15.4+15.4+0.3=37.8GB
+https://huggingface.co/esmivn/downloads/resolve/main/wan22-i2v-720p/wan2.2_i2v_high_noise_14B_Q8_0.gguf
   dir=unet
-  out=wan2.1-i2v-14b-720p-Q5_K_S.gguf
-https://huggingface.co/city96/Wan2.1-I2V-14B-720P-gguf/resolve/main/wan2.1-i2v-14b-720p-Q8_0.gguf
+  out=wan2.2_i2v_high_noise_14B_Q8_0.gguf
+https://huggingface.co/esmivn/downloads/resolve/main/wan22-i2v-720p/wan2.2_i2v_low_noise_14B_Q8_0.gguf
   dir=unet
-  out=wan2.1-i2v-14b-720p-Q8_0.gguf
-https://huggingface.co/Comfy-Org/Wan_2.1_ComfyUI_repackaged/resolve/main/split_files/text_encoders/umt5_xxl_fp8_e4m3fn_scaled.safetensors
+  out=wan2.2_i2v_low_noise_14B_Q8_0.gguf
+https://huggingface.co/esmivn/downloads/resolve/main/wan22-i2v-720p/umt5_xxl_fp8_e4m3fn_scaled.safetensors
   dir=text_encoders
   out=umt5_xxl_fp8_e4m3fn_scaled.safetensors
-https://huggingface.co/Comfy-Org/Wan_2.1_ComfyUI_repackaged/resolve/main/split_files/clip_vision/clip_vision_h.safetensors
-  dir=clip_vision
-  out=clip_vision_h.safetensors
-https://huggingface.co/Comfy-Org/Wan_2.1_ComfyUI_repackaged/resolve/main/split_files/vae/wan_2.1_vae.safetensors
+https://huggingface.co/esmivn/downloads/resolve/main/wan22-i2v-720p/wan_2.1_vae.safetensors
   dir=vae
   out=wan_2.1_vae.safetensors
+
+# multitalk
+# 0.3+2+17+2.7+1.3+6.7+0.2=30.2GB
+https://huggingface.co/esmivn/downloads/resolve/main/multitalk/Wan21_T2V_14B_lightx2v_cfg_step_distill_lora_rank32.safetensors
+  dir=loras
+  out=Wan21_T2V_14B_lightx2v_cfg_step_distill_lora_rank32.safetensors
+https://huggingface.co/esmivn/downloads/resolve/main/multitalk/Wan21_Uni3C_controlnet_fp16.safetensors
+  dir=controlnet
+  out=Wan21_Uni3C_controlnet_fp16.safetensors
+https://huggingface.co/esmivn/downloads/resolve/main/multitalk/Wan2_1-I2V-14B-480P_fp8_e4m3fn.safetensors
+  dir=diffusion_models
+  out=Wan2_1-I2V-14B-480P_fp8_e4m3fn.safetensors
+https://huggingface.co/esmivn/downloads/resolve/main/multitalk/WanVideo_2_1_Multitalk_14B_fp8_e4m3fn.safetensors
+  dir=diffusion_models
+  out=WanVideo_2_1_Multitalk_14B_fp8_e4m3fn.safetensors
+https://huggingface.co/esmivn/downloads/resolve/main/multitalk/clip_vision_h.safetensors
+  dir=clip_vision
+  out=clip_vision_h.safetensors
+https://huggingface.co/esmivn/downloads/resolve/main/multitalk/umt5_xxl_fp8_e4m3fn_scaled.safetensors
+  dir=text_encoders
+  out=umt5_xxl_fp8_e4m3fn_scaled.safetensors
+https://huggingface.co/esmivn/downloads/resolve/main/multitalk/wan_2.1_vae.safetensors
+  dir=vae
+  out=wan_2.1_vae.safetensors
+
+# video upscaler
+# 0.1+2.9+4.7=7.7GB
+https://huggingface.co/esmivn/downloads/resolve/main/video-upscaler/RealESRGAN_x2plus.pth
+  dir=upscale_models
+  out=RealESRGAN_x2plus.pth
+https://huggingface.co/esmivn/downloads/resolve/main/video-upscaler/Wan2_1-T2V-1_3B_bf16.safetensors
+  dir=diffusion_models
+  out=Wan2_1-T2V-1_3B_bf16.safetensors
+https://huggingface.co/esmivn/downloads/resolve/main/video-upscaler/umt5-xxl-encoder-Q6_K.gguf
+  dir=text_encoders
+  out=umt5-xxl-encoder-Q6_K.gguf
+
+# hidream edit
+# 0.3+1+0.2+9+5+34.2=49.7
+https://huggingface.co/esmivn/downloads/resolve/main/hidream-edit/ae.safetensors
+  dir=vae
+  out=ae.safetensors
+https://huggingface.co/esmivn/downloads/resolve/main/hidream-edit/clip_g_hidream.safetensors
+  dir=text_encoders
+  out=clip_g_hidream.safetensors
+https://huggingface.co/esmivn/downloads/resolve/main/hidream-edit/clip_l_hidream.safetensors
+  dir=text_encoders
+  out=clip_l_hidream.safetensors
+https://huggingface.co/esmivn/downloads/resolve/main/hidream-edit/hidream_e1_1_bf16.safetensors
+  dir=diffusion_models
+  out=hidream_e1_1_bf16.safetensors
+https://huggingface.co/esmivn/downloads/resolve/main/hidream-edit/llama_3.1_8b_instruct_fp8_scaled.safetensors
+  dir=text_encoders
+  out=llama_3.1_8b_instruct_fp8_scaled.safetensors
+https://huggingface.co/esmivn/downloads/resolve/main/hidream-edit/t5xxl_fp8_e4m3fn_scaled.safetensors
+  dir=text_encoders
+  out=t5xxl_fp8_e4m3fn_scaled.safetensors
 
 # # 250226_MICKMUMPITZ_CCC_v02_FLUX_ADV
 # https://huggingface.co/lllyasviel/flux1_dev/resolve/main/flux1-dev-fp8.safetensors
