@@ -198,3 +198,30 @@ https://huggingface.co/esmivn/Index-TTS/resolve/main/gpt_v1_5.pth
 https://huggingface.co/esmivn/Index-TTS/resolve/main/unigram_12000.vocab
   dir=TTS/Index-TTS
   out=unigram_12000.vocab
+
+# Qwen Image
+# 20.2 + 8.7 + 0.2 = 29.1 GB
+https://huggingface.co/esmivn/downloads/resolve/main/qwen-image/qwen-image-Q8_0.gguf
+  dir=unet
+  out=qwen-image-Q8_0.gguf
+https://huggingface.co/esmivn/downloads/resolve/main/qwen-image/qwen_2.5_vl_7b_fp8_scaled.safetensors
+  dir=text_encoders
+  out=qwen_2.5_vl_7b_fp8_scaled.safetensors
+https://huggingface.co/esmivn/downloads/resolve/main/qwen-image/qwen_image_vae.safetensors
+  dir=vae
+  out=qwen_image_vae.safetensors
+
+# MMAudio
+# 12 GB
+https://huggingface.co/esmivn/downloads/resolve/main/mmaudio/mmaudio_large_44k_v2_fp32.safetensors
+  dir=mmaudio
+  out=mmaudio_large_44k_v2_fp32.safetensors
+https://huggingface.co/esmivn/downloads/resolve/main/mmaudio/mmaudio_synchformer_fp32.safetensors
+  dir=mmaudio
+  out=mmaudio_synchformer_fp32.safetensors
+https://huggingface.co/esmivn/downloads/resolve/main/mmaudio/apple_DFN5B-CLIP-ViT-H-14-384_fp32.safetensors
+  dir=mmaudio
+  out=apple_DFN5B-CLIP-ViT-H-14-384_fp32.safetensors
+https://huggingface.co/esmivn/downloads/resolve/main/mmaudio/mmaudio_vae_44k_fp32.safetensors
+  dir=mmaudio
+  out=mmaudio_vae_44k_fp32.safetensors
