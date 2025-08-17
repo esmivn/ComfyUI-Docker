@@ -79,6 +79,12 @@ https://huggingface.co/esmivn/downloads/resolve/main/wan22-i2v-720p/wan2.2_i2v_l
 https://huggingface.co/esmivn/downloads/resolve/main/wan22-i2v-720p/wan2.2_i2v_lightx2v_4steps_lora_v1_low_noise.safetensors
   dir=loras
   out=wan2.2_i2v_lightx2v_4steps_lora_v1_low_noise.safetensors
+https://huggingface.co/esmivn/downloads/resolve/main/wan22-i2v-720p/Wan2.2-Lightning_I2V-A14B-4steps-lora_HIGH_fp16.safetensors
+  dir=loras
+  out=Wan2.2-Lightning_I2V-A14B-4steps-lora_HIGH_fp16.safetensors
+https://huggingface.co/esmivn/downloads/resolve/main/wan22-i2v-720p/Wan2.2-Lightning_I2V-A14B-4steps-lora_LOW_fp16.safetensors
+  dir=loras
+  out=Wan2.2-Lightning_I2V-A14B-4steps-lora_LOW_fp16.safetensors
 
 # multitalk
 # 0.3+2+17+2.7+1.3+6.7+0.2=30.2GB
@@ -216,6 +222,9 @@ https://huggingface.co/esmivn/downloads/resolve/main/qwen-image/qwen_2.5_vl_7b_f
 https://huggingface.co/esmivn/downloads/resolve/main/qwen-image/qwen_image_vae.safetensors
   dir=vae
   out=qwen_image_vae.safetensors
+https://huggingface.co/esmivn/downloads/resolve/main/qwen-image/Qwen-Image-Lightning-8steps-V1.1.safetensors
+  dir=loras
+  out=Qwen-Image-Lightning-8steps-V1.1.safetensors
 
 # MMAudio
 # 12 GB
