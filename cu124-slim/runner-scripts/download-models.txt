@@ -25,21 +25,21 @@ https://raw.githubusercontent.com/madebyollin/taesd/main/taef1_decoder.pth
 
 # wan21_start_end_720p
 # 11.259 + 16.899 + 6.273 + 1.177 + 0.236 = 35.84 GB
-https://huggingface.co/city96/Wan2.1-I2V-14B-720P-gguf/resolve/main/wan2.1-i2v-14b-720p-Q5_K_S.gguf
-  dir=unet
-  out=wan2.1-i2v-14b-720p-Q5_K_S.gguf
-https://huggingface.co/city96/Wan2.1-I2V-14B-720P-gguf/resolve/main/wan2.1-i2v-14b-720p-Q8_0.gguf
-  dir=unet
-  out=wan2.1-i2v-14b-720p-Q8_0.gguf
-https://huggingface.co/Comfy-Org/Wan_2.1_ComfyUI_repackaged/resolve/main/split_files/text_encoders/umt5_xxl_fp8_e4m3fn_scaled.safetensors
-  dir=text_encoders
-  out=umt5_xxl_fp8_e4m3fn_scaled.safetensors
-https://huggingface.co/Comfy-Org/Wan_2.1_ComfyUI_repackaged/resolve/main/split_files/clip_vision/clip_vision_h.safetensors
-  dir=clip_vision
-  out=clip_vision_h.safetensors
-https://huggingface.co/Comfy-Org/Wan_2.1_ComfyUI_repackaged/resolve/main/split_files/vae/wan_2.1_vae.safetensors
-  dir=vae
-  out=wan_2.1_vae.safetensors
+# https://huggingface.co/city96/Wan2.1-I2V-14B-720P-gguf/resolve/main/wan2.1-i2v-14b-720p-Q5_K_S.gguf
+#   dir=unet
+#   out=wan2.1-i2v-14b-720p-Q5_K_S.gguf
+# https://huggingface.co/city96/Wan2.1-I2V-14B-720P-gguf/resolve/main/wan2.1-i2v-14b-720p-Q8_0.gguf
+#   dir=unet
+#   out=wan2.1-i2v-14b-720p-Q8_0.gguf
+# https://huggingface.co/Comfy-Org/Wan_2.1_ComfyUI_repackaged/resolve/main/split_files/text_encoders/umt5_xxl_fp8_e4m3fn_scaled.safetensors
+#   dir=text_encoders
+#   out=umt5_xxl_fp8_e4m3fn_scaled.safetensors
+# https://huggingface.co/Comfy-Org/Wan_2.1_ComfyUI_repackaged/resolve/main/split_files/clip_vision/clip_vision_h.safetensors
+#   dir=clip_vision
+#   out=clip_vision_h.safetensors
+# https://huggingface.co/Comfy-Org/Wan_2.1_ComfyUI_repackaged/resolve/main/split_files/vae/wan_2.1_vae.safetensors
+#   dir=vae
+#   out=wan_2.1_vae.safetensors
 
 # wan21-i2v-720p
 # 11.259 + 16.899 + 6.273 + 1.177 + 0.236 = 35.84 GB
@@ -58,6 +58,71 @@ https://huggingface.co/Comfy-Org/Wan_2.1_ComfyUI_repackaged/resolve/main/split_f
 # https://huggingface.co/Comfy-Org/Wan_2.1_ComfyUI_repackaged/resolve/main/split_files/vae/wan_2.1_vae.safetensors
 #   dir=vae
 #   out=wan_2.1_vae.safetensors
+
+# hidream edit
+# 0.3+1+0.2+9+5+17.4=32.9
+# https://huggingface.co/esmivn/downloads/resolve/main/hidream-edit/ae.safetensors
+#   dir=vae
+#   out=ae.safetensors
+# https://huggingface.co/esmivn/downloads/resolve/main/hidream-edit/clip_g_hidream.safetensors
+#   dir=text_encoders
+#   out=clip_g_hidream.safetensors
+# https://huggingface.co/esmivn/downloads/resolve/main/hidream-edit/clip_l_hidream.safetensors
+#   dir=text_encoders
+#   out=clip_l_hidream.safetensors
+# https://huggingface.co/esmivn/downloads/resolve/main/hidream-edit/hidream_e1_1_bf16_Q8_0.gguf
+#   dir=unet
+#   out=hidream_e1_1_bf16_Q8_0.gguf
+# https://huggingface.co/esmivn/downloads/resolve/main/hidream-edit/llama_3.1_8b_instruct_fp8_scaled.safetensors
+#   dir=text_encoders
+#   out=llama_3.1_8b_instruct_fp8_scaled.safetensors
+# https://huggingface.co/esmivn/downloads/resolve/main/hidream-edit/t5xxl_fp8_e4m3fn_scaled.safetensors
+#   dir=text_encoders
+#   out=t5xxl_fp8_e4m3fn_scaled.safetensors
+
+# # 250226_MICKMUMPITZ_CCC_v02_FLUX_ADV
+# https://huggingface.co/lllyasviel/flux1_dev/resolve/main/flux1-dev-fp8.safetensors
+#   dir=checkpoints
+#   out=flux1-dev-fp8.safetensors
+# https://huggingface.co/InstantX/FLUX.1-dev-Controlnet-Union/resolve/main/diffusion_pytorch_model.safetensors
+#   dir=controlnet/FLUX.1/InstantX-FLUX1-Dev-Union
+#   out=diffusion_pytorch_model.safetensors
+# https://huggingface.co/esmivn/downloads/resolve/main/4xcrv1.pth
+#   dir=upscale_models
+#   out=4x-ClearRealityV1.pth
+# https://huggingface.co/esmivn/downloads/resolve/main/phv1.safetensors
+#   dir=checkpoints
+#   out=photon_v1.safetensors
+# https://huggingface.co/esmivn/downloads/resolve/main/icl.safetensors
+#   dir=diffusion_models/IC-Light
+#   out=iclight_sd15_fbc.safetensors
+# https://huggingface.co/esmivn/downloads/resolve/main/fylv8m.pt
+#   dir=ultralytics/bbox
+#   out=face_yolov8m.pt
+
+# HiDream
+# 0.312 + 0.231 + 1.294 + 4.803 + 8.458 + 31.862 + 15.931 = 62.891 GB
+# https://huggingface.co/Comfy-Org/HiDream-I1_ComfyUI/resolve/main/split_files/vae/ae.safetensors
+#   dir=vae
+#   out=ae.safetensors
+# https://huggingface.co/Comfy-Org/HiDream-I1_ComfyUI/resolve/main/split_files/text_encoders/clip_l_hidream.safetensors
+#   dir=text_encoders
+#   out=clip_l_hidream.safetensors
+# https://huggingface.co/Comfy-Org/HiDream-I1_ComfyUI/resolve/main/split_files/text_encoders/clip_g_hidream.safetensors
+#   dir=text_encoders
+#   out=clip_g_hidream.safetensors
+# https://huggingface.co/Comfy-Org/HiDream-I1_ComfyUI/resolve/main/split_files/text_encoders/t5xxl_fp8_e4m3fn_scaled.safetensors
+#   dir=text_encoders
+#   out=t5xxl_fp8_e4m3fn_scaled.safetensors
+# https://huggingface.co/Comfy-Org/HiDream-I1_ComfyUI/resolve/main/split_files/text_encoders/llama_3.1_8b_instruct_fp8_scaled.safetensors
+#   dir=text_encoders
+#   out=llama_3.1_8b_instruct_fp8_scaled.safetensors
+# https://huggingface.co/city96/HiDream-I1-Dev-gguf/resolve/main/hidream-i1-dev-BF16.gguf
+#   dir=unet
+#   out=hidream-i1-dev-BF16.gguf
+# https://huggingface.co/city96/HiDream-I1-Dev-gguf/resolve/main/hidream-i1-dev-Q8_0.gguf
+#   dir=unet
+#   out=hidream-i1-dev-Q8_0.gguf
 
 # wan22-i2v-720p
 # 6.7+15.4+15.4+0.3=37.8GB
@@ -122,71 +187,6 @@ https://huggingface.co/esmivn/downloads/resolve/main/video-upscaler/umt5-xxl-enc
   dir=text_encoders
   out=umt5-xxl-encoder-Q6_K.gguf
 
-# hidream edit
-# 0.3+1+0.2+9+5+17.4=32.9
-https://huggingface.co/esmivn/downloads/resolve/main/hidream-edit/ae.safetensors
-  dir=vae
-  out=ae.safetensors
-https://huggingface.co/esmivn/downloads/resolve/main/hidream-edit/clip_g_hidream.safetensors
-  dir=text_encoders
-  out=clip_g_hidream.safetensors
-https://huggingface.co/esmivn/downloads/resolve/main/hidream-edit/clip_l_hidream.safetensors
-  dir=text_encoders
-  out=clip_l_hidream.safetensors
-https://huggingface.co/esmivn/downloads/resolve/main/hidream-edit/hidream_e1_1_bf16_Q8_0.gguf
-  dir=unet
-  out=hidream_e1_1_bf16_Q8_0.gguf
-https://huggingface.co/esmivn/downloads/resolve/main/hidream-edit/llama_3.1_8b_instruct_fp8_scaled.safetensors
-  dir=text_encoders
-  out=llama_3.1_8b_instruct_fp8_scaled.safetensors
-https://huggingface.co/esmivn/downloads/resolve/main/hidream-edit/t5xxl_fp8_e4m3fn_scaled.safetensors
-  dir=text_encoders
-  out=t5xxl_fp8_e4m3fn_scaled.safetensors
-
-# # 250226_MICKMUMPITZ_CCC_v02_FLUX_ADV
-# https://huggingface.co/lllyasviel/flux1_dev/resolve/main/flux1-dev-fp8.safetensors
-#   dir=checkpoints
-#   out=flux1-dev-fp8.safetensors
-# https://huggingface.co/InstantX/FLUX.1-dev-Controlnet-Union/resolve/main/diffusion_pytorch_model.safetensors
-#   dir=controlnet/FLUX.1/InstantX-FLUX1-Dev-Union
-#   out=diffusion_pytorch_model.safetensors
-# https://huggingface.co/esmivn/downloads/resolve/main/4xcrv1.pth
-#   dir=upscale_models
-#   out=4x-ClearRealityV1.pth
-# https://huggingface.co/esmivn/downloads/resolve/main/phv1.safetensors
-#   dir=checkpoints
-#   out=photon_v1.safetensors
-# https://huggingface.co/esmivn/downloads/resolve/main/icl.safetensors
-#   dir=diffusion_models/IC-Light
-#   out=iclight_sd15_fbc.safetensors
-# https://huggingface.co/esmivn/downloads/resolve/main/fylv8m.pt
-#   dir=ultralytics/bbox
-#   out=face_yolov8m.pt
-
-# HiDream
-# 0.312 + 0.231 + 1.294 + 4.803 + 8.458 + 31.862 + 15.931 = 62.891 GB
-https://huggingface.co/Comfy-Org/HiDream-I1_ComfyUI/resolve/main/split_files/vae/ae.safetensors
-  dir=vae
-  out=ae.safetensors
-https://huggingface.co/Comfy-Org/HiDream-I1_ComfyUI/resolve/main/split_files/text_encoders/clip_l_hidream.safetensors
-  dir=text_encoders
-  out=clip_l_hidream.safetensors
-https://huggingface.co/Comfy-Org/HiDream-I1_ComfyUI/resolve/main/split_files/text_encoders/clip_g_hidream.safetensors
-  dir=text_encoders
-  out=clip_g_hidream.safetensors
-https://huggingface.co/Comfy-Org/HiDream-I1_ComfyUI/resolve/main/split_files/text_encoders/t5xxl_fp8_e4m3fn_scaled.safetensors
-  dir=text_encoders
-  out=t5xxl_fp8_e4m3fn_scaled.safetensors
-https://huggingface.co/Comfy-Org/HiDream-I1_ComfyUI/resolve/main/split_files/text_encoders/llama_3.1_8b_instruct_fp8_scaled.safetensors
-  dir=text_encoders
-  out=llama_3.1_8b_instruct_fp8_scaled.safetensors
-https://huggingface.co/city96/HiDream-I1-Dev-gguf/resolve/main/hidream-i1-dev-BF16.gguf
-  dir=unet
-  out=hidream-i1-dev-BF16.gguf
-https://huggingface.co/city96/HiDream-I1-Dev-gguf/resolve/main/hidream-i1-dev-Q8_0.gguf
-  dir=unet
-  out=hidream-i1-dev-Q8_0.gguf
-
 # Index-TTS
 # 1.538 + 0.499 + 0 + 0 + 0.227 + 1.091 + 0 = 3.35 GB
 https://huggingface.co/esmivn/Index-TTS/resolve/main/bigvgan_discriminator.pth
@@ -225,6 +225,9 @@ https://huggingface.co/esmivn/downloads/resolve/main/qwen-image/qwen_image_vae.s
 https://huggingface.co/esmivn/downloads/resolve/main/qwen-image/Qwen-Image-Lightning-8steps-V1.1.safetensors
   dir=loras
   out=Qwen-Image-Lightning-8steps-V1.1.safetensors
+https://huggingface.co/esmivn/downloads/resolve/main/qwen-image/qwen_image_edit_fp8_e4m3fn.safetensors
+  dir=diffusion_models
+  out=qwen_image_edit_fp8_e4m3fn.safetensors
 
 # MMAudio
 # 12 GB
