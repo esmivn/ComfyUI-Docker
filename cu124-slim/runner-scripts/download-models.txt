@@ -243,3 +243,23 @@ https://huggingface.co/esmivn/downloads/resolve/main/mmaudio/apple_DFN5B-CLIP-Vi
 https://huggingface.co/esmivn/downloads/resolve/main/mmaudio/mmaudio_vae_44k_fp32.safetensors
   dir=mmaudio
   out=mmaudio_vae_44k_fp32.safetensors
+
+# image-upscaler
+https://huggingface.co/esmivn/downloads/resolve/main/image-upscaler/BSRNet.pth
+  dir=diffbir
+  out=BSRNet.pth
+https://huggingface.co/esmivn/downloads/resolve/main/image-upscaler/face_swinir_v1.ckpt
+  dir=diffbir
+  out=face_swinir_v1.ckpt
+https://huggingface.co/esmivn/downloads/resolve/main/image-upscaler/general_swinir_v1.ckpt
+  dir=diffbir
+  out=general_swinir_v1.ckpt
+https://huggingface.co/esmivn/downloads/resolve/main/image-upscaler/scunet_color_real_psnr.pth
+  dir=diffbir
+  out=scunet_color_real_psnr.pth
+https://huggingface.co/esmivn/downloads/resolve/main/image-upscaler/v2-1_512-ema-pruned.ckpt
+  dir=diffbir
+  out=v2-1_512-ema-pruned.ckpt
+https://huggingface.co/esmivn/downloads/resolve/main/image-upscaler/v2.pth
+  dir=diffbir
+  out=v2.pth
