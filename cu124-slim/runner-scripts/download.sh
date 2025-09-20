@@ -48,6 +48,7 @@ clone_or_pull https://github.com/billwuhao/ComfyUI_IndexTTS.git
 clone_or_pull https://github.com/Flow-two/ComfyUI-WanStartEndFramesNative.git
 clone_or_pull https://github.com/fearnworks/ComfyUI_FearnworksNodes.git
 clone_or_pull https://github.com/kijai/ComfyUI-MMAudio.git
+clone_or_pull https://github.com/yolain/ComfyUI-Easy-IndexTTS2.git
 clone_or_pull https://github.com/kael558/ComfyUI-GGUF-FantasyTalking.git
 
 
