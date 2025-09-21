@@ -20,6 +20,7 @@ https://github.com/esmivn/ComfyUI_IndexTTS/raw/refs/heads/main/requirements.txt
 https://github.com/kijai/ComfyUI-MMAudio/raw/refs/heads/main/requirements.txt
 https://github.com/christian-byrne/audio-separation-nodes-comfyui/raw/refs/heads/master/requirements.txt
 https://github.com/yolain/ComfyUI-Easy-IndexTTS2/raw/refs/heads/main/requirements.txt
+https://github.com/jtscmw01/ComfyUI-DiffBIR/raw/refs/heads/main/requirements.txt
 )
 
 for line in "${array[@]}";
