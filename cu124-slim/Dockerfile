@@ -101,6 +101,29 @@ cpp13 \
     && update-alternatives --install /usr/bin/gcov-tool gcov-tool /usr/bin/gcov-tool-13 90 
 
 ################################################################################
+# CUDA Toolkit
+# Provides nvcc and CUDA libraries so CUDA_HOME and CUDA binaries are always present.
+
+RUN --mount=type=cache,target=/var/cache/zypp \
+    zypper addrepo --check --refresh --priority 90 \
+        https://developer.download.nvidia.com/compute/cuda/repos/opensuse15/x86_64/cuda-opensuse15.repo cuda \
+    && zypper refresh cuda \
+    && zypper --gpg-auto-import-keys \
+        install --no-confirm --auto-agree-with-licenses \
+            cuda-toolkit-12-4 \
+    && printf '%s\n' \
+        'export CUDA_HOME=/usr/local/cuda' \
+        'export PATH=$CUDA_HOME/bin:${PATH}' \
+        'export LD_LIBRARY_PATH=$CUDA_HOME/lib64:${LD_LIBRARY_PATH:-}' \
+        >/etc/profile.d/cuda.sh \
+    && . /etc/profile.d/cuda.sh \
+    && which nvcc \
+    && nvcc --version
+
+ENV CUDA_HOME=/usr/local/cuda
+ENV PATH="${CUDA_HOME}/bin:${PATH}"
+
+################################################################################
 # Python Packages
 
 # PyTorch, xFormers
@@ -134,6 +157,7 @@ RUN --mount=type=cache,target=/root/.cache/pip \
 
 # Bind libs (.so files)
 ENV LD_LIBRARY_PATH="${LD_LIBRARY_PATH}\
+:/usr/local/cuda/lib64\
 :/usr/local/lib64/python3.12/site-packages/torch/lib\
 :/usr/local/lib/python3.12/site-packages/cusparselt/lib\
 :/usr/local/lib/python3.12/site-packages/nvidia/cublas/lib\
