@@ -79,6 +79,40 @@ google-noto-coloremoji-fonts
 ENV LD_PRELOAD=/usr/lib64/libjpeg.so.8
 
 ################################################################################
+# Custom nodes archive
+# Pre-populate frequently used repositories for reuse inside the container.
+
+RUN --mount=type=cache,target=/var/cache/git \
+    set -eux; \
+    mkdir -p /custom_nodes_archive; \
+    cd /custom_nodes_archive; \
+    for repo in \
+        https://github.com/ltdrdata/ComfyUI-Manager.git \
+        https://github.com/kijai/ComfyUI-WanVideoWrapper.git \
+        https://github.com/chflame163/ComfyUI_LayerStyle.git \
+        https://github.com/city96/ComfyUI-GGUF.git \
+        https://github.com/rgthree/rgthree-comfy.git \
+        https://github.com/yolain/ComfyUI-Easy-Use.git \
+        https://github.com/kijai/ComfyUI-KJNodes.git \
+        https://github.com/crystian/ComfyUI-Crystools.git \
+        https://github.com/Kosinkadink/ComfyUI-VideoHelperSuite.git \
+        https://github.com/Fannovel16/ComfyUI-Frame-Interpolation.git \
+        https://github.com/melMass/comfy_mtb.git \
+        https://github.com/christian-byrne/audio-separation-nodes-comfyui.git \
+        https://github.com/sipherxyz/comfyui-art-venture.git \
+        https://github.com/billwuhao/ComfyUI_IndexTTS.git \
+        https://github.com/Flow-two/ComfyUI-WanStartEndFramesNative.git \
+        https://github.com/fearnworks/ComfyUI_FearnworksNodes.git \
+        https://github.com/kijai/ComfyUI-MMAudio.git \
+        https://github.com/yolain/ComfyUI-Easy-IndexTTS2.git \
+        https://github.com/jtscmw01/ComfyUI-DiffBIR.git; \
+    do \
+        name="$(basename "${repo}" .git)"; \
+        rm -rf "${name}"; \
+        git clone --depth=1 --no-tags --recurse-submodules --shallow-submodules "${repo}" "${name}"; \
+    done
+
+################################################################################
 # GCC 13 
 # Required for compiling CUDA 12.4-related code.
 
@@ -106,8 +140,7 @@ cpp13 \
 
 RUN --mount=type=cache,target=/var/cache/zypp \
     zypper addrepo --check --refresh --priority 90 \
-        https://developer.download.nvidia.com/compute/cuda/repos/opensuse15/x86_64/cuda-opensuse15.repo cuda \
-    && zypper refresh cuda \
+        https://developer.download.nvidia.com/compute/cuda/repos/opensuse15/x86_64/cuda-opensuse15.repo \
     && zypper --gpg-auto-import-keys \
         install --no-confirm --auto-agree-with-licenses \
             cuda-toolkit-12-4 \
@@ -117,8 +150,7 @@ RUN --mount=type=cache,target=/var/cache/zypp \
         'export LD_LIBRARY_PATH=$CUDA_HOME/lib64:${LD_LIBRARY_PATH:-}' \
         >/etc/profile.d/cuda.sh \
     && . /etc/profile.d/cuda.sh \
-    && which nvcc \
-    && nvcc --version
+    && /usr/local/cuda/bin/nvcc --version
 
 ENV CUDA_HOME=/usr/local/cuda
 ENV PATH="${CUDA_HOME}/bin:${PATH}"

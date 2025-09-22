@@ -30,27 +30,7 @@ cd /root/ComfyUI
 git reset --hard "$(git tag | grep -e '^v' | sort -V | tail -1)"
 set -e
 
-cd /root/ComfyUI/custom_nodes
-clone_or_pull https://github.com/ltdrdata/ComfyUI-Manager.git
-clone_or_pull https://github.com/kijai/ComfyUI-WanVideoWrapper.git
-clone_or_pull https://github.com/chflame163/ComfyUI_LayerStyle.git
-clone_or_pull https://github.com/city96/ComfyUI-GGUF.git
-clone_or_pull https://github.com/rgthree/rgthree-comfy.git
-clone_or_pull https://github.com/yolain/ComfyUI-Easy-Use.git
-clone_or_pull https://github.com/kijai/ComfyUI-KJNodes.git
-clone_or_pull https://github.com/crystian/ComfyUI-Crystools.git
-clone_or_pull https://github.com/Kosinkadink/ComfyUI-VideoHelperSuite.git
-clone_or_pull https://github.com/Fannovel16/ComfyUI-Frame-Interpolation.git
-clone_or_pull https://github.com/melMass/comfy_mtb.git
-clone_or_pull https://github.com/christian-byrne/audio-separation-nodes-comfyui.git
-clone_or_pull https://github.com/sipherxyz/comfyui-art-venture.git
-clone_or_pull https://github.com/billwuhao/ComfyUI_IndexTTS.git
-clone_or_pull https://github.com/Flow-two/ComfyUI-WanStartEndFramesNative.git
-clone_or_pull https://github.com/fearnworks/ComfyUI_FearnworksNodes.git
-clone_or_pull https://github.com/kijai/ComfyUI-MMAudio.git
-clone_or_pull https://github.com/yolain/ComfyUI-Easy-IndexTTS2.git
-clone_or_pull https://github.com/jtscmw01/ComfyUI-DiffBIR.git
-
+cp -r /custom_nodes_archive/* /root/ComfyUI/custom_nodes/
 
 echo "########################################"
 echo "[INFO] Downloading Custom Nodes..."
